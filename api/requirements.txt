@@ -1,0 +1,9 @@
+langchain
+langgraph
+tavily-python
+beautifulsoup4
+openai
+fastapi
+uvicorn
+json5
+python-dotenv
