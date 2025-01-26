@@ -1,4 +1,7 @@
 langchain
+langchain_openai
+langchainhub
+langchain_experimental
 langgraph
 tavily-python
 beautifulsoup4
@@ -7,3 +10,4 @@ fastapi
 uvicorn
 json5
 python-dotenv
+
