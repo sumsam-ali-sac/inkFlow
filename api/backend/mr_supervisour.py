@@ -1,16 +1,16 @@
 from langgraph.graph import StateGraph, START, END
 from langgraph.types import Send
-from graph_components.configuration import (
+from .graph_components.configuration import (
     Configuration as dynamic_configuration,
 )
-from graph_components.state import (
+from .graph_components.state import (
     BlogState,
     BlogStateInput,
     BlogStateOutput,
     SectionState,
 )
-import graph_components.configuration as dynamic_configuration
-from people import MrSearch, MrCurator, MrPlanner, MrCompiler, MrWriter
+from .graph_components import configuration as dynamic_configuration
+from .people import MrSearch, MrCurator, MrPlanner, MrCompiler, MrWriter
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -92,16 +92,4 @@ class MrSupervisor:
 
 
 sample_title = "The Future of AI in Healthcare: Transforming Patient Care"
-blog_input = BlogState(
-    title=sample_title,
-    finalized_sections=[],
-    sources=[],
-    images=[],
-    sections=[],
-    main_sections=None,
-    finalized_blog=None,
-)
-supervisor = MrSupervisor()
-resulting_blog_state = supervisor.run(blog_input)
-finalized_blog_content = resulting_blog_state.get("finalized_blog")
-print(finalized_blog_content)
+

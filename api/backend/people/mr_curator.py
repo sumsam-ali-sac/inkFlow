@@ -1,7 +1,7 @@
 from datetime import datetime
 import os
 from langchain_core.prompts import ChatPromptTemplate
-from graph_components.state import BlogState
+from ..graph_components.state import BlogState
 from langchain_openai import AzureChatOpenAI
 from pydantic import BaseModel
 from langchain.output_parsers import PydanticOutputParser

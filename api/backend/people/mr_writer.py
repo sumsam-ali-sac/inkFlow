@@ -1,14 +1,14 @@
 from langgraph.types import Send
 from langchain_core.messages import HumanMessage, SystemMessage
-from graph_components.state import BlogState, SectionState
+from ..graph_components.state import BlogState, SectionState
 from langchain_core.runnables import RunnableConfig
 from langchain.output_parsers import PydanticOutputParser
-import graph_components.configuration as dynamic_configuration
-from graph_components.prompts import (
+from ..graph_components import configuration as dynamic_configuration
+from ..graph_components.prompts import (
     mainBodySectionWriterInstructions,
     introConclusionInstructions,
 )
-from graph_components.llm import llm
+from ..graph_components.llm import llm
 
 
 class MrWriter:

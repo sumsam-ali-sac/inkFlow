@@ -1,13 +1,9 @@
 langchain
-langchain_openai
-langchainhub
-langchain_experimental
 langgraph
 tavily-python
-beautifulsoup4
+BeautifulSoup4
 openai
 fastapi
-uvicorn
 json5
+langchain_openai
 python-dotenv
-

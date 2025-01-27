@@ -1,10 +1,10 @@
 from langchain_core.messages import HumanMessage, SystemMessage
-from graph_components.state import BlogState, Sections
+from ..graph_components.state import BlogState, Sections
 from langchain_core.runnables import RunnableConfig
 from langchain.output_parsers import PydanticOutputParser
-import graph_components.configuration as dynamic_configuration
-from graph_components.prompts import blogPlannerInstructions
-from graph_components.llm import llm
+from ..graph_components import configuration as dynamic_configuration
+from ..graph_components.prompts import blogPlannerInstructions
+from ..graph_components.llm import llm
 
 
 class MrPlanner:

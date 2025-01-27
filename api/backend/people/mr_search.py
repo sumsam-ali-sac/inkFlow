@@ -1,5 +1,5 @@
 from tavily import TavilyClient
-from graph_components.state import BlogState
+from ..graph_components.state import BlogState
 import os
 from dotenv import load_dotenv
 

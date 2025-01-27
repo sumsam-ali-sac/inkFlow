@@ -1,4 +1,4 @@
-from graph_components.state import BlogState, Section
+from ..graph_components.state import BlogState, Section
 
 
 class MrCompiler:
