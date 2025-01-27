@@ -1,9 +1,17 @@
 from fastapi import FastAPI, HTTPException
 from backend.graph_components.state import BlogState
 from backend.mr_supervisour import MrSupervisor
+from fastapi.middleware.cors import CORSMiddleware
+
 
 inkFlowBackend = FastAPI()
-
+inkFlowBackend.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Use specific domains in production
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @inkFlowBackend.post("/Generateblog-v1")
 async def generate_blog(request: BlogState):
