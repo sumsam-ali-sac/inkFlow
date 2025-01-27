@@ -1,5 +1,10 @@
 langchain
 langgraph
+uvicorn
+pydantic
+langchain-openai
+langchain-community
+langchain-core
 tavily-python
 BeautifulSoup4
 openai

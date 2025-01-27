@@ -34,11 +34,9 @@ export function BlogGenerator() {
         sources: [],
         images: [],
         sections: [],
-        main_sections: null,
-        finalized_blog: null,
       };
 
-      const response = await fetch("/api/generate", {
+      const response = await fetch("/api/Generateblog-v1", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

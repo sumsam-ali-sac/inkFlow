@@ -30,7 +30,7 @@ The blog post should follow this strict three-part structure:
 """
 
 
-@dataclass(kw_only=True)
+@dataclass
 class Configuration:
     blog_structure: str = DEFAULT_BLOG_STRUCTURE
 
